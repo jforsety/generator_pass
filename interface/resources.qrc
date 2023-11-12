@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons8-обновить-64.png</file>
+    <file>icons8-спрятать-50.png</file>
+    <file>icons8-скопировать-24 (1).png</file>
+    <file>copy.png</file>
+    <file>eye.png</file>
+    <file>key.png</file>
+    <file>key1.svg</file>
+    <file>lock.svg</file>
+    <file>update.png</file>
+  </qresource>
+</RCC>
