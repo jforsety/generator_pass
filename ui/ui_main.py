@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-
-################################################################################
-## Form generated from reading UI file 'main.ui'
-##
-## Created by: Qt User Interface Compiler version 6.3.1
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
-
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -19,7 +9,7 @@ from PySide6.QtWidgets import (QAbstractSpinBox, QApplication, QFrame, QHBoxLayo
     QLabel, QLineEdit, QMainWindow, QPushButton,
     QSizePolicy, QSlider, QSpinBox, QVBoxLayout,
     QWidget)
-import resources
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -81,14 +71,14 @@ class Ui_MainWindow(object):
 
         self.Layaout_password = QHBoxLayout()
         self.Layaout_password.setObjectName(u"Layaout_password")
-        self.frame = QFrame(self.centralwidget)
-        self.frame.setObjectName(u"frame")
+        self.frame_password = QFrame(self.centralwidget)
+        self.frame_password.setObjectName(u"frame_password")
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
-        self.frame.setSizePolicy(sizePolicy)
-        self.frame.setStyleSheet(u"QFrame {\n"
+        sizePolicy.setHeightForWidth(self.frame_password.sizePolicy().hasHeightForWidth())
+        self.frame_password.setSizePolicy(sizePolicy)
+        self.frame_password.setStyleSheet(u"QFrame {\n"
 "    border: 2px solid indigo;\n"
 "    border-radius: 5px;\n"
 "    margin-right: 0;\n"
@@ -97,90 +87,90 @@ class Ui_MainWindow(object):
 "QFrame:hover {\n"
 "    border-color: #483D8B;\n"
 "}")
-        self.frame.setFrameShape(QFrame.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout = QHBoxLayout(self.frame)
+        self.frame_password.setFrameShape(QFrame.StyledPanel)
+        self.frame_password.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_password)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.lineEdit = QLineEdit(self.frame)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setStyleSheet(u"QLineEdit {\n"
+        self.line_password = QLineEdit(self.frame_password)
+        self.line_password.setObjectName(u"line_password")
+        self.line_password.setStyleSheet(u"QLineEdit {\n"
 "    border: none;\n"
 "    margin: 0;\n"
 "    font-size: 20pt;\n"
 "}")
-        self.lineEdit.setAlignment(Qt.AlignCenter)
+        self.line_password.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout.addWidget(self.lineEdit)
+        self.horizontalLayout.addWidget(self.line_password)
 
-        self.pushButton_3 = QPushButton(self.frame)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setCursor(QCursor(Qt.PointingHandCursor))
-        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+        self.btn_visibility = QPushButton(self.frame_password)
+        self.btn_visibility.setObjectName(u"btn_visibility")
+        self.btn_visibility.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_visibility.setStyleSheet(u"QPushButton {\n"
 "    border: none;\n"
 "    margin: 0;\n"
 "    background-color: transparent;\n"
 "}")
         icon2 = QIcon()
         icon2.addFile(u":/icons/icons8-\u0441\u043f\u0440\u044f\u0442\u0430\u0442\u044c-50.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_3.setIcon(icon2)
-        self.pushButton_3.setIconSize(QSize(30, 30))
+        self.btn_visibility.setIcon(icon2)
+        self.btn_visibility.setIconSize(QSize(30, 30))
 
-        self.horizontalLayout.addWidget(self.pushButton_3)
+        self.horizontalLayout.addWidget(self.btn_visibility)
 
-        self.pushButton_2 = QPushButton(self.frame)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setCursor(QCursor(Qt.PointingHandCursor))
-        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
+        self.btn_refresh = QPushButton(self.frame_password)
+        self.btn_refresh.setObjectName(u"btn_refresh")
+        self.btn_refresh.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_refresh.setStyleSheet(u"QPushButton {\n"
 "    margin-right: 0;\n"
 "    margin-left: 0;\n"
 "}\n"
 "")
         icon3 = QIcon()
         icon3.addFile(u":/icons/icons8-\u043e\u0431\u043d\u043e\u0432\u0438\u0442\u044c-64.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_2.setIcon(icon3)
-        self.pushButton_2.setIconSize(QSize(45, 45))
+        self.btn_refresh.setIcon(icon3)
+        self.btn_refresh.setIconSize(QSize(45, 45))
 
-        self.horizontalLayout.addWidget(self.pushButton_2)
+        self.horizontalLayout.addWidget(self.btn_refresh)
 
-        self.pushButton = QPushButton(self.frame)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))
-        self.pushButton.setLayoutDirection(Qt.LeftToRight)
-        self.pushButton.setStyleSheet(u"QPushButton {\n"
+        self.btn_copy = QPushButton(self.frame_password)
+        self.btn_copy.setObjectName(u"btn_copy")
+        self.btn_copy.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_copy.setLayoutDirection(Qt.LeftToRight)
+        self.btn_copy.setStyleSheet(u"QPushButton {\n"
 "    padding: 5px;\n"
 "    margin-left: 0;\n"
 "}")
         icon4 = QIcon()
         icon4.addFile(u":/icons/icons8-\u0441\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c-24 (1).png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton.setIcon(icon4)
-        self.pushButton.setIconSize(QSize(35, 35))
+        self.btn_copy.setIcon(icon4)
+        self.btn_copy.setIconSize(QSize(35, 35))
 
-        self.horizontalLayout.addWidget(self.pushButton)
+        self.horizontalLayout.addWidget(self.btn_copy)
 
 
-        self.Layaout_password.addWidget(self.frame)
+        self.Layaout_password.addWidget(self.frame_password)
 
 
         self.verticalLayout.addLayout(self.Layaout_password)
 
         self.Layout_info = QHBoxLayout()
         self.Layout_info.setObjectName(u"Layout_info")
-        self.Strengt = QLabel(self.centralwidget)
-        self.Strengt.setObjectName(u"Strengt")
-        sizePolicy.setHeightForWidth(self.Strengt.sizePolicy().hasHeightForWidth())
-        self.Strengt.setSizePolicy(sizePolicy)
-        self.Strengt.setCursor(QCursor(Qt.ArrowCursor))
-        self.Strengt.setAlignment(Qt.AlignCenter)
+        self.label_strength = QLabel(self.centralwidget)
+        self.label_strength.setObjectName(u"label_strength")
+        sizePolicy.setHeightForWidth(self.label_strength.sizePolicy().hasHeightForWidth())
+        self.label_strength.setSizePolicy(sizePolicy)
+        self.label_strength.setCursor(QCursor(Qt.ArrowCursor))
+        self.label_strength.setAlignment(Qt.AlignCenter)
 
-        self.Layout_info.addWidget(self.Strengt)
+        self.Layout_info.addWidget(self.label_strength)
 
-        self.label = QLabel(self.centralwidget)
-        self.label.setObjectName(u"label")
-        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy)
-        self.label.setAlignment(Qt.AlignCenter)
+        self.label_entropy = QLabel(self.centralwidget)
+        self.label_entropy.setObjectName(u"label_entropy")
+        sizePolicy.setHeightForWidth(self.label_entropy.sizePolicy().hasHeightForWidth())
+        self.label_entropy.setSizePolicy(sizePolicy)
+        self.label_entropy.setAlignment(Qt.AlignCenter)
 
-        self.Layout_info.addWidget(self.label)
+        self.Layout_info.addWidget(self.label_entropy)
 
 
         self.verticalLayout.addLayout(self.Layout_info)
@@ -287,11 +277,11 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Generator Pass", None))
         self.icon_lock.setText("")
-        self.pushButton_3.setText("")
-        self.pushButton_2.setText("")
-        self.pushButton.setText("")
-        self.Strengt.setText("")
-        self.label.setText("")
+        self.btn_visibility.setText("")
+        self.btn_refresh.setText("")
+        self.btn_copy.setText("")
+        self.label_strength.setText("")
+        self.label_entropy.setText("")
         self.btn_lower.setText(QCoreApplication.translate("MainWindow", u"a-z", None))
         self.btn_upper.setText(QCoreApplication.translate("MainWindow", u"A-Z", None))
         self.btn_digits.setText(QCoreApplication.translate("MainWindow", u"0-9", None))
