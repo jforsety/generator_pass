@@ -105,6 +105,8 @@ class Ui_MainWindow(object):
         self.btn_visibility = QPushButton(self.frame_password)
         self.btn_visibility.setObjectName(u"btn_visibility")
         self.btn_visibility.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_visibility.setCheckable(True)
+        self.btn_visibility.setChecked(True)
         self.btn_visibility.setStyleSheet(u"QPushButton {\n"
 "    border: none;\n"
 "    margin: 0;\n"
